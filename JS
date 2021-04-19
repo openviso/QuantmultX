@@ -35,9 +35,6 @@ https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key 
 # WPS (By eHpo)
 ^https://account.wps.cn/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
-
-hostname = *.googlevideo.com
-
 #新版YouTube去广告
 ctier=[A-Z] url 302 ctier=A
 ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200
